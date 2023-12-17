@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        .top{
+           /* background-image: url('./pink.png'); */
+           /* background-color: antiquewhite; */
+           height: 40px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .searchContainer{
+            height: 98px;
+            width: 100%;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            column-gap: 4rem;
+        }
+        .navli{
+            list-style-type: none;
+            display: inline-block;
+            /* width: 16rem; */
+            
+        }
+        .navbarcontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: bisque; */
+        }
+        .navul{
+            display: flex;
+            column-gap: 5rem;
+            height: 27px;
+            /* background-color: white; */
+        }
+        .inli{
+            list-style-type: none;
+            
+            /* color: black; */
+            
+        }
+        .inul{
+            background-color: white;
+        }
+        .navli:hover div{
+            display: block;
+        }
+        .inli:hover ul{
+            display: block;
+        }
+        .innerul{
+            display: none;
+        }
+        .inlicontainer{
+            background-color: white;
+            border-radius: 7px;
+            /* margin-top: 12px; */
+            display: none;
+            margin-right: 1rem;
+        }
+        .transformcontainer{
+            background-color: rgba(255, 238, 246, 0.54);
+            height: 364px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .cardContainer{
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+        .cards{
+            display: flex;
+            justify-content: space-between;
+        }
+        .footli{
+            list-style-type: none;
+        }
+        .dropdown-submenu{
+            margin-left: 10rem;
+            margin-top: -2.4rem;
+        }
+        .dropdown-item:hover .dropdown-submenu{
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="top" style="background-image: url('https://s3-alpha-sig.figma.com/img/86fc/20a2/478a772a5e5ed7479fb701d2a23515e6?Expires=1703462400&Signature=eaYnH6gBhlUpbXiBDCDx38VZde2s7xInotvwggxKi~l61G81NbSW9SGpA9mBOE1dWMkN9vOcxruDOlzVkhMf7s-zLOma8ZalW~CSiFjo3tWRjTnUfnQA63ae5P-Yx3QM30ZZLSxf0o2lzQ27DCYiQM2OshAN6ndTUaqHt5PMWegKQYNlXyAfLx07sTy5EbfcBYtfM3lB2~8Mqs6sRUVdBwJuFDlgIgG4zpjpf6HRXlYtLGVouDllW1gD4ZsUzxAj4mF-RanmHnY8y~P-Xo~wM-6QCP0BBavrXjJnojm2nk2bSvt--ajMuBZYNP01OzI6ASg9iiO~ivYBHkd1iiLlgw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'); background-size: cover; " >
+        <div style="display: flex; justify-content: center; margin-left: 20%;">Quick buy get upto 20% off on </div>
+         <div style="margin-left: 20%;">x</div>
+    </div>
+
+
+    <!-- searchbar -->
+<div class="searchContainer">
+    <div style="display: flex; align-items: center; column-gap: 1rem;"><img src="logoPink.png">
+   <div><p> <span style="color: #FA5C98;">PINK</span>FLAMINGO</p>
+    <p style="color: #FA5C98; font-size: 8.78px; font-weight: 400;">TAGLINE GOES HERE</p>
+</div>
+   
+    </div>
+    <div class="searchbar" style="display: flex; height: 49px; width: 619px; align-items: center; justify-content: space-between; background-color: white; border: 1px solid #FA5C98;">
+        <div style="background-color: #FA5C98; height: 49px; width: 110px; display: flex; align-items: center; column-gap: 1rem;">
+        <div style="color: white; height: 23px; width: 23px;padding-left: 4px;"><i class="bi bi-geo-alt-fill"></i></div>
+        <div style="color: white;">Deliver to 11092</div>
+        </div>
+        <div style="display: flex;"><input type="text" style="width: 20rem; color: rgba(48, 31, 74, 0.35); border: none;" placeholder="search for madication & wellness products"></div>
+        <div style="margin-right: 2%; color: rgba(48, 31, 74, 0.35);"><i class="bi bi-search"></i></div>
+    </div>
+    <div><i class="bi bi-cart-fill"></i></div>
+    <div style="display: flex; column-gap: 1rem;"><i class="bi bi-person-circle"></i> <div>Sign in / sign up</div></div>
+</div>
+
+<!-- navbar -->
+
+
+
+
+
+<div class="navbarcontainer">
+    <nav>
+        <ul class="navul">
+            <li class="navli">Home</li>
+            <li class="navli">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #FA5C98;">
+                  products
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="pinkFlamingo2.html">
+                          Dhoop Cones &raquo;
+                        </a>
+                        <ul class="dropdown-menu dropdown-submenu">
+                          <li>
+                            <a class="dropdown-item" href="#">Submenu item 1</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Submenu item 2</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Incense Holder</a></li>
+                    <li><a class="dropdown-item" href="#">Yantras</a></li>
+                    <li><a class="dropdown-item" href="#">Incense Sticks</a></li>
+                    <li><a class="dropdown-item" href="#">Pooja Thali sets</a></li>
+                    <li><a class="dropdown-item" href="#">Shankh</a></li>
+                    <li><a class="dropdown-item" href="#">Kalash</a></li>
+                    <li><a class="dropdown-item" href="#">Book Rests</a></li>
+                  </ul>
+                </li>
+
+
+            <!-- <li class="navli" style="width: 16rem;"> Products 
+                <div class="inlicontainer">
+       
+            
+                    <ul class="inul">
+                        <li class="inli">Dhoop Cones
+                            <div class="innerlicontainer" >
+                                <ul class="innerul" style="margin-left: 9rem;">
+                                    <li>h</li>
+                                    <li>h</li>
+                                    <li>h</li>
+                                    <li>h</li>
+                                    <li>h</li>
+                                    <li>h</li>
+                                </ul>
+                            </div>
+                        </li> -->
+                        <!-- <li class="inli">Incense Holder</li>
+                        <li class="inli">Yantras</li>
+                        <li class="inli">Incense Sticks</li>
+                        <li class="inli">Pooja Thali sets</li>
+                        <li class="inli">Shankh</li>
+                        <li class="inli">Kalash</li>
+                        <li class="inli">Book Rests</li>
+                    </ul>
+                
+            
+            </div>
+                
+            </li> -->
+            <li class="navli">Courses</li >
+            <li class="navli">Blogs</li >
+            <li class="navli">videos</li >
+            <li class="navli">Contact Us</li>
+        </ul>
+    </nav>
+</div>
+
+
+<!-- transform your mind soal -->
+
+
+<div class="transformcontainer">
+    
+
+<div class="transformcontainer">
+    <div style="background-color: white; height: 44px; width: 44px; border-radius: 100%; display: flex; justify-content: center; align-items: center;"><i class="bi bi-chevron-left" style="color: #FA5C98;"></i></div>
+    <img src="./hand.png" style="height: 204px; width: 261px;">
+    <div style="width: 783px; height: 207px;"><h2 style="font-weight: 800; font-size: 46px;">Transform Your Mind & Soul: Discover Your Spiritual Path with Our Courses</h2></div>
+    <div style="background-color: white; height: 44px; width: 44px; border-radius: 100%; display: flex; justify-content: center; align-items: center;"><i class="bi bi-chevron-right" style="color: #FA5C98;"></i></div>
+</div>
+</div>
+
+<!-- first card -->
+
+<div class="cardContainer">
+    <div><p>Shop From Our Top Categories</p></div>
+
+    <div class="cards">
+        <div><div style="width: 180px; height: 218px; border-radius: 8px; background-image: url('https://s3-alpha-sig.figma.com/img/69f5/f53a/478cbbeef9646fc4defa0aac23c7364d?Expires=1703462400&Signature=Vt49KDDSdmQpVFSSr8g45LkfWnDq78hdnKoHKq~Z3Mw~kjUi~BzF6fCm62IBw4LW812rPOOWKeYNW1x7rwIcZ-AmQmXYLkTlxVkZ1ZGA3dba7IUyO7E4PNoX4GNv4mYjFawj6VSB1qFv3i9vheuPe0oODMB40eOJQMCJ~937RBAsjIh3BAWiznzQEfIh--KtLFBomi2mFIbwjPCdjUD7iMjMBvDa7Y0aOchr3be-cddTScEEJ~CaYgVcU1pjwKsnd75XOIHGKZtwKCRa2wApH9xYZwicxArMKg8j-0GKrzuS40w2p04UWIs9UJ6UyfjT0CQQJzL43-Mt2YvcSFqyOQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'); background-size: cover;"></div><div style="display: flex; align-items: center; justify-content: center;">Cone Dhoop</div> <div style="color: #FA5C98; display: flex; justify-content: center;">Shop Now</div></div>
+        <div><div style="width: 180px; height: 218px; border-radius: 8px; background-image: url('https://s3-alpha-sig.figma.com/img/50b9/9173/3530335bc6c47cb96a94ce754980d046?Expires=1703462400&Signature=pgc11GXEOEXZ0oG-ja53~IBAhjLTao-UMKeQEUJ-2axeMJmrj0uD2nkqGGGJq65QN9cTF2OuMcDO7G42t1Zwe~5a4dXKVhsdO6QNizyXOO0FNniiqJte1kWI94wW~fx3fQ0zC3H~BC7iLtRlDkX64v6WX6hPYde2zDR566Ndy~eaZ3Tf~JnWACR4WRhGxXjTj3SlzyZGj9iqfFHhG9~cd-YgahSrffKY~NvwTp5tI5eOIQ77ZvlEZN2UBxQ3oI~jMfNICodeNXcERpIVpcfZpgMKKxbOl6wL4WbAFM0j-iV43hGtsEv8Sxo1VwV1KO-3d6GYqDSB9ENe6cpQJ7QGWA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'); background-size: cover;"></div><div style="display: flex; align-items: center; justify-content: center;">Incense Holders</div> <div style="color: #FA5C98; display: flex; justify-content: center;">Shop Now</div></div>
+        <div><div style="width: 180px; height: 218px; border-radius: 8px; background-image: url('https://s3-alpha-sig.figma.com/img/7262/ff36/203a4c50e523a31ca4df33b08567a2cf?Expires=1703462400&Signature=IVlW0Na9swaAlduU9vSOzH-~PG1E0U8M~-qKQ49oTox2AEWW5Hv4alPUtloZiSjxf0QsGFdeHZVuuo1l~wwmDRik5jR1tevc7Je-9cctTA9vTVeTUKIrTtV8uWTDCSJgKuM9t7gOSo2C3MaeCyAvnN3uEu-gngOni7NfAzzL489KL8lWMfnUi3j4tTTw1m9Myud~u~9npdhwKu1kQ6xf4V6oyCtTdzUCUaaIimydJ~h9qfEBU3QIhz3ViwwtP-VoY6bg1OKviqjGj00f29ixg8NZe7gBAiQpXVysfai0GJZUD2XcQtnHwoAIGz3oNesB8PybCAy6jvit8NHbwdpk9A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'); background-size: cover;"></div><div style="display: flex; align-items: center; justify-content: center;">Incense Sticks</div> <div style="color: #FA5C98; display: flex; justify-content: center;">Shop Now</div></div>
+        <div><div style="width: 180px; height: 218px; border-radius: 8px; background-image: url('https://s3-alpha-sig.figma.com/img/719e/e7f2/d996a35eb66f73f8a63e8443587af45c?Expires=1703462400&Signature=Em3QUU8NI03~dCgko6ipBvJOZqKJTR1QPjQh-Y~gM1T8TGSYHU7GDjR5fg0VbBHcK87~Igqvh3hDnr-77Pg-NqJ6Hl7dw-ZbthumEsAkvv6lO5PMlBVPGOVYgwdG3PLG4M8xD11qBtT8n9fPcvvwuQPRj1eqAjhYm8V9ZrOmj-wWNKUu0yEH119GeddZPn0Tlp10Yjnj4ft5i65a9MARt56M3JPrByhRnM4OGnb1-LcU1KdVV5KmjDkzTSosS4W0-VYe3P1B7L6vjbhadxxdKWGIfHoEft6SyvllwlVdIl0ewJmjM5tPeukSd2y8aDNEUPF2kkBRgIDMBM3s6EaggQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'); background-size: cover;"></div><div style="display: flex; align-items: center; justify-content: center;">Shankh</div> <div style="color: #FA5C98; display: flex; justify-content: center;">Shop Now</div></div>
+        <div><div style="width: 180px; height: 218px; border-radius: 8px; background-image: url('https://s3-alpha-sig.figma.com/img/bdd4/8412/7932bdc56374ba1003edd8494ff7dcea?Expires=1703462400&Signature=QhE-AyrYGavsOxu3CIA7VleyPFFfSI46l2KW4VNYwkecme3H6PRxOnCxsz2llp5X1NyaPsWQTRuCcLnreDAdGPktm00KZCGI8luLOGhpUIb-E28rhP1WW4GITsdTzNAp~lGu3rGiZS3NwSQBRyZ26-BGHXALNZdV8rN-qXvun-QBZxx1WIMl3BbY9BdJt9DVBVAwIxrmtXd7ghfYBIcoyS~03OS4SnM6cI6sR7EJhUHwtPmwXwz4sV7L1E8DBo3REpJc8d2Ji9u6CEFl9lEWK~hTgvEYd1gQgfAXnZNHXdTWnbhtGEWeb4Hpmdqz3YeLkr5dLObCdjhCm~bWQx2lvA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'); background-size: cover;"></div><div style="display: flex; align-items: center; justify-content: center;">Kalash</div> <div style="color: #FA5C98; display: flex; justify-content: center;">Shop Now</div></div>
+        <div><div style="width: 180px; height: 218px; border-radius: 8px; background-image: url('https://s3-alpha-sig.figma.com/img/2a0c/87a3/4708e2464548978af41eec8b5d43c227?Expires=1703462400&Signature=pnSu90OiXP3-DC8~MIdrc6C1p1D~q9tAfCVH1gD6UYLBoU0DiH0ezOFmXE3LrDIqFZQhpnIoe3H1lPq5DLyEh5gSBviDksWTfr-IVOqerKpWdqa92FhqsMzHyfjyhIMjqvOzt1pHeSeOa7DBxgEBzfCsqG6i-yExyRg8gqZO~Mf3z8bZl2b6iHtdsoeIBGUyhU1AsHJdaMPCKgzxwow~OIPzhCKE1iz1fO1836OHoW-FAaaj-9IC8-UXh~3ylXamf-Qno022Tt5Vir~7pB2u2GhXFckuug2yZO8cFTJSGvAwOMlnJLWx70l8kryWqE81KQsL9USxI99JOognvqDMWA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'); background-size: cover;"></div><div style="display: flex; align-items: center; justify-content: center;">Buddha Statue</div> <div style="color: #FA5C98; display: flex; justify-content: center;">Shop Now</div></div>
+    </div>
+
+    <div style="height: 388px;  background-color: #FFF2F8;">
+        <div style="display: flex; justify-content: center; align-items: center; padding-top: 1rem;"><h1 style="font-weight: 800;">Why PINK FLAMINGO ?</h1></div>
+        <div style="display: flex; justify-content: center; align-items: center; padding-top: 3rem;">
+            <img src="./logo2.png" height="219px" width="219px">
+            <div >
+                <ul style="width: 461px;">
+                    <li>Spirituality can provide them with a framework for understanding the universe and their role in it</li>
+                    <li>Coping with stress and uncertainty</li>
+                    <li>Spirituality can be a path to personal growth and self-discovery</li>
+                    <li>Spirituality can provide people with a sense of community and connection with others</li>
+                </ul>
+            </div>
+        <!-- <div style="border-radius: 100%; background-color: #FA5C98; height: 219px; width: 219px;"></div> -->
+        </div>
+
+    </div>
+
+    <div><h1 style="font-weight: 800; display: flex; justify-content: center; align-items: center; padding-top: 2rem; padding-bottom: 2rem;">Our Latest Blogs</h1></div>
+
+    <!-- second card -->
+
+    <div class="card-group" style="display: flex; column-gap: 1rem; border-radius: 7px;">
+        <div class="card" style="border-radius: 7px; width: 380px; height: 631px;">
+          <img src="https://s3-alpha-sig.figma.com/img/19dd/6de7/5adc2ec431d935771a63fab83cbe93c1?Expires=1703462400&Signature=NMAIM-B2Kef0MbAezQlTR-MOUJqK8ctYxUJUubKz~S2zlI0uEkgc9WoiBF2PSiN-h6~WMdyf5~Xvu6Hg-Oui1gJ5uIyLBDlv-64A~XQ5z~hTRaZ4KCz8UevTCdBL77XDmF~7wYeRVgfrsBJNiZwohvrHZX2lFKZ4ex0UYKoKAtChrqDfSP8V7UvW7T7s-9aez0BZcWD9W9a8kUdoio1PFdlNhK0ojhBabCQFN7X1lApZbzORGKr3lkXv44bSGtLXjuHLt0nRIz6~Spxy9Wr6jyIt0oz5~bzuX4fdalYArOpjwwznzKYUZllrcb999129LbsKFt5xLWZxfE-EdwMnTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" style="height: 277px;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"style="display: flex; justify-content: center;">The Power of Mindfulness</h5>
+            <p class="card-text" style="display: flex; justify-content: center;">Mindfulness is the practice of being present and fully engaged in the moment. It is about paying attention to our thoughts, feelings, and sensations in a non-judgmental way. </p>
+            <div style="display: flex; justify-content: center; align-items: center; padding-top: 7rem;"> <button style="border-radius: 7px; width: 126px; height: 38px; background-color: linear-gradient(90deg, #DC8064 -11.11%, #E98C70 6.02%, #FB9E82 23.14%, #FDBB9F 48.17%, #FFCAAE 63.98%, #F8AD92 78.48%, #F19176 95.6%);">Read More</button></div>
+            <div style="color: #B9B9B9;">08-05-2022</div>
+        </div>
+        </div>
+        <div class="card" style="border-radius: 7px; width: 380px; height: 631px;">
+          <img src="https://s3-alpha-sig.figma.com/img/758b/fd3a/998358b08b63d18344f304671308b39c?Expires=1703462400&Signature=KhKoaEU0exevyRUWYmWmdUSLj57jM7UCVZdyx0vSIVg4pWOaImJ1WBpw4iS7~OkGmKfCoXYesmJk0LulvUGbd-Rr0aHKwPtYwh~S6FRc-Kxv-fioWDkEHGJ-7HA6aSd17nhIstTp0FWG3shmvAXSG6VDM5-~TREgjiIQn7T8Zq~Q18J9c6U5n9fZRH6uoSwULQtlAW1NTanQ~DU9VEYOc0ycJPDIzxA1y3h2bq64UIlAPzS2IsPId4qo9uczDo0idNIgC43GovyCKwoKIdhkImP7l2ggqD9aUMi8a0u9dqWnJps4DTh8hFXLaHPznrImz6916PmGQzpsxDXq04MW3g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" style="height: 277px;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="display: flex; justify-content: center;">Connecting with the Divine</h5>
+            <p class="card-text" style="display: flex; justify-content: center;">Connecting with the Divine refers to the process of establishing a spiritual connection or relationship with a higher power, such as God, the Universe, or a higher consciousness. </p>
+            <div style="display: flex; justify-content: center; align-items: center; padding-top: 7rem;"> <button style="border-radius: 7px; width: 126px; height: 38px; background-color: linear-gradient(90deg, #DC8064 -11.11%, #E98C70 6.02%, #FB9E82 23.14%, #FDBB9F 48.17%, #FFCAAE 63.98%, #F8AD92 78.48%, #F19176 95.6%);">Read More</button></div>
+            <div style="color: #B9B9B9;">11-06-2022</div>
+        </div>
+        </div>
+        <div class="card" style="border-radius: 7px; width: 380px; height: 631px;">
+          <img src="https://s3-alpha-sig.figma.com/img/2fa8/b65f/39c79afaf332e6fa71378a6cd07d48ff?Expires=1703462400&Signature=La-sknrSRP-MmXiMCbmngwm2iUAt~PFItLownRm8mK4eBG4DHEKpUvuytUec29eQhxLC~WKC7UbayYsQn6ShOwoMacm4NyfYCgqh3Udur0Txl3Umms1tT1WMU5PLcftGHfJbfhzELijwnfBwypihE9SOcsqMOUufwqMSFBUgQDlhJg5uJ~2qd9qoeeEifj8~QBnNCxuSZ6iSAikYD2~bvKUTNYPlwytAgZA99h~auupDFT-OJVCpQz3pQszPaAYTHpd7wBHs2YVm4f8CO-Kmq9k-z-g-Vr8gKSRog2v1UhG7NFCu4Rmffl4ci-6biYGuEH-oY1adE~5IcSqaJxqqBA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" style="height: 277px;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="display: flex; justify-content: center;">The Beauty of Forgiveness</h5>
+            <p class="card-text" style="display: flex; justify-content: center;">The beauty of forgiveness lies in its transformative power. It has the ability to heal wounds and to restore relationships that have been damaged. Forgiveness brings a new level of understanding.</p>
+            <div style="display: flex; justify-content: center; align-items: center; padding-top: 7rem;"> <button style="border-radius: 7px; width: 126px; height: 38px; background-color: linear-gradient(90deg, #DC8064 -11.11%, #E98C70 6.02%, #FB9E82 23.14%, #FDBB9F 48.17%, #FFCAAE 63.98%, #F8AD92 78.48%, #F19176 95.6%);">Read More</button></div>
+            <div style="color: #B9B9B9;">11-07-2022</div>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Let's Connect -->
+      <div style="padding-bottom: 5rem;">
+<div>
+<div style="display: flex; justify-content: center; align-items: center; padding-top: 2rem; padding-bottom: 3rem;"><h1 style="font-weight: 800;">Let's Connect</h1></div>
+    <div style="width: 50%; display: flex; column-gap: 1.3rem; ">
+        <div style="width: 280px; height: 66px; box-shadow: 0px 4px 13px 0px rgba(190, 190, 190, 0.20); border-radius: 7px; display: flex; justify-content: space-around; align-items: center;"> <i class="bi bi-person" style="color: #FA5C98;"></i>|<input type="text" placeholder="Name" style="border: none;"></div>
+        <div style="width: 280px; height: 66px; box-shadow: 0px 4px 13px 0px rgba(190, 190, 190, 0.20); border-radius: 7px; display: flex; justify-content: space-around; align-items: center;"> <i class="bi bi-telephone" style="color: #FA5C98;"></i>|<input type="text" placeholder="Phone Number" style="border: none;"></div>
+    </div>
+
+</div>
+<div style="width: 582px; height: 66px; box-shadow: 0px 4px 13px 0px rgba(190, 190, 190, 0.20); border-radius: 7px; display: flex;column-gap: 1.1rem; align-items: center;"><i class="bi bi-envelope" style="color: #FA5C98; padding-left: 1.1rem;"></i>|<input type="text" placeholder="Email Address" style="border: none;"></div>
+<input type="text" placeholder="Write Your Message Here" style="width: 582px; height: 181px; box-shadow: 0px 4px 13px 0px rgba(190, 190, 190, 0.20); border-radius: 7px; display: flex;column-gap: 1.1rem; align-items: center; border: none; "></input>
+</div>
+</div>
+
+<!-- footer top -->
+
+<div style="display: flex; padding-left: 150px; padding-right: 150px; justify-content: space-between; align-items: center; height: 141px; background-color: #FA5C98; color: white; border: white;">
+    <div style="display: flex; justify-content: center; align-items: center; font-weight: 500; font-size: 24px; column-gap: 1rem;">
+        <div><i class="bi bi-envelope"></i></div>
+        <div>Sign Up To Shop Now</div>
+    </div>
+
+    <div style="width: 592px; height: 49px; border-radius: 8px; background-color: #FFFCFC; display: flex; justify-content: space-between; align-items: center; padding: 3px; margin-top: 2rem;">
+        <input type="text" placeholder="Enter Your Email" style="border: none;">
+        <button style="width: 113.65px; height: 36px; background-color: #FA5C98; color: white; border-radius: 5px; border: none;">SUBSCRIBE</button>
+    </div>
+</div>
+
+<div style="height: 356px; background-color: #FA5C98; color: #FA5C98; padding-left: 150px; padding-right: 130px; border-top: 2px solid white; display: flex; justify-content: space-between; padding-top: 5rem; column-gap: 2rem;">
+   <div style="color: white;"> <ul>
+        <h3>Contact Us</h3>
+        <li class="footli">Demo Store</li>
+        <li class="footli">No. 1258 Utawala, Nairobi, 01010</li>
+        <li class="footli">Kenya</li>
+        <li class="footli">+25470101010</li>
+        <li class="footli">example@gmail.com</li>
+    </ul>
+</div>
+
+<div style="color: white;"> <ul>
+    <h3>Information</h3>
+    <li class="footli">Privacy Policy</li>
+    <li class="footli">Refund Policy</li>
+    <li class="footli">Shipping Policy</li>
+    <li class="footli">Terms Of Service</li>
+    <li class="footli">Blogs</li>
+</ul>
+</div>
+
+<div style="color: white;"> <ul>
+    <h3>Account</h3>
+    <li class="footli">Search</li>
+    <li class="footli">AboutUs</li>
+    <li class="footli">Faq</li>
+    <li class="footli">Contact</li>
+    <li class="footli">Help</li>
+</ul>
+</div>
+
+<div style="color: white;"> <ul>
+    <h3>Quick Links</h3>
+    <li class="footli">Incense Sticks</li>
+    <li class="footli">Shankh</li>
+    <li class="footli">Kalash</li>
+    <li class="footli">Incense Holders</li>
+    <li class="footli">Cone Dhoop</li>
+</ul>
+</div>
+
+<div>
+    <h3 style="color: white;">Social Media</h3>
+    <div style="color: white;">Follow Us On Social Media and Stay Updated</div>
+    <div style="display: flex; column-gap: 1rem;">
+    <div style="width: 43px; height: 43px; border-radius: 100%; background-color: rgb(255, 255, 255, 0.5); display: flex; justify-content: center; align-items: center;"><i class="bi bi-twitter" style="color: white;"></i></div>
+    <div style="width: 43px; height: 43px; border-radius: 100%; background-color: rgb(255, 255, 255, 0.5); display: flex; justify-content: center; align-items: center;"><i class="bi bi-facebook" style="color: white;"></i></div>
+    <div style="width: 43px; height: 43px; border-radius: 100%; background-color: rgb(255, 255, 255, 0.5); display: flex; justify-content: center; align-items: center;"><i class="bi bi-instagram" style="color: white;"></i></div>
+    <div style="width: 43px; height: 43px; border-radius: 100%; background-color: rgb(255, 255, 255, 0.5); display: flex; justify-content: center; align-items: center;"><i class="bi bi-youtube" style="color: white;"></i></div>
+    </div>
+</div>
+
+</div>
+
+
+</body>
+</html>
